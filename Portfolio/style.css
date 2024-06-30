@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+p{
+    color: rgb(85, 85, 85);
+}
+
+a,
+.btn {
+  transition: all 300ms ease;
+}
+
+body{
+    font-family: poppins,sans-serif;
+}
+
+
+/* Navbar Starts */
+nav{
+    justify-content: space-around;
+    align-content: center;
+    height: 17vh;
+}
+
+nav,.nav-items{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.logo{
+    font-size: 2rem;
+}
+
+.nav-items{
+    gap: 2rem;
+    list-style: none;
+    font-size: 1.5rem;
+}
+
+/* Navbar Ends */
+
+/* Profile Section Starts */
+
+#profile{
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    height: 80vh;
+}
+section{
+    padding-top: 4vh;
+    margin: 0 10rem;
+    box-sizing: border-box;
+    min-height: fit-content;
+}
+
+.img img{
+    display: flex;
+    height: 400px;
+    width: 400px;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    border-radius: 50%;
+}
+
+.section-text{
+    align-self: center;
+    text-align: center;
+}
+
+.section-text p{
+    font-weight: 600;
+}
+
+.section-text-p1{
+    align-items: center;
+}
+
+.title{
+    font-size: 3rem;
+    text-align: center;
+}
+
+.section-text-p2{
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+}
+
+.btn-container{
+    gap: 1rem;
+    display: flex;
+    justify-content: center;
+}
+
+.btn{
+    font-weight: 600;
+    transition: all 300ms ease;
+    padding: 1rem;
+    width: 8rem;
+    border-radius: 2rem;
+}
+
+.btn-color-1 .btn-color-1{
+    border: rgb(53, 53, 53) 0.1rem solid;;
+}
+
+.btn-color-1:hover,.btn-color-1:hover{
+    cursor: pointer;
+}
+
+.btn-color-1,.btn-color-2:hover{
+    background: rgb(0, 0, 0);
+    color: white;
+}
+
+
+.btn-color-1:hover {
+    background: rgb(0, 0, 0);
+  }
+  
+  .btn-color-2 {
+    background: none;
+
+  }
+  
+  .btn-color-2:hover {
+    border: rgb(255, 255, 255) 0.1rem solid;
+  }
+  
+  .btn-container {
+    gap: 1rem;
+  }
+
+  .social-media-icons{
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    gap: 1rem;
+  }
+
+  .icon{
+    cursor: pointer;
+    height: 2rem;
+  }

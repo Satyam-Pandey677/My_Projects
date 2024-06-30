@@ -1,0 +1,143 @@
+/* :root{
+    first-color:#F3EAE3;
+    btn-color:#3D8168;
+    price-color: #4A8871;
+} */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+.display{
+    height: 100%;
+    width: 100%;
+    background:#F3EAE3 ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-card
+{
+    display: flex;
+    width: 600px;
+    height:450px;
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.left{
+    width: 50%;
+    height: 100%;
+    background-image: url("images/image-product-desktop.jpg");
+    background-size: cover;
+}
+
+.left img{
+    height: 100%;
+    width: 100%;
+}
+
+.right{
+    width: 50%;
+    height: 100%;
+}
+
+.product-details{
+    height: 90%;
+    width: 80%;
+    margin: 30px;
+}
+
+.head{
+    height: 40%;
+    width: 100%;
+}
+
+.product-details p{
+    font-family: 'Montserrat';
+    font-size: 14px;
+    color: gray;
+    font-weight: 500;
+}
+
+.product-details h2{
+    font-family: 'Fraunces';
+    font-size: 2rem;
+    font-weight: 800;
+    margin-top: 20px;
+}
+
+.product-discription{
+    height: 23%;
+    width: 100%;
+}
+
+.product-discription p{
+    font-family: 'Montserrat';
+    font-size: 14px;
+    margin-top: 15px;
+    color: gray;
+}   
+
+.product-pricing{
+    display: flex;
+    height: 10%;
+    width: 50%;
+    color:#4A8871 ;
+    font-family: 'Fraunces';
+}
+
+.last-price{
+    position: relative;
+    margin-left: 20px;
+    margin-top: 13px;
+    color: gray;
+    font-weight: 500;
+    font-family: 'Montserrat';
+}
+.line{
+    position: absolute;
+    top:8px;
+    left:-4px;
+    height: 1.05px;
+    width: 60px;
+    background: gray;
+}
+
+.btn{
+    height: 100%;
+    width: 100%;
+    
+}
+
+.btn button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    height: 45px;
+    width: 100%;
+    border: none;
+    margin-top: 25px;
+    border-radius: 8px;
+    background:#3D8168 ;
+}
+
+button:hover{
+    background: #2a5747;
+}
+
+
+.btn button p{
+    color: #fff;
+    font-weight: 700;
+}
