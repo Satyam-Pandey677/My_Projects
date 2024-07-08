@@ -1,0 +1,231 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Barlow Semi Condensed';
+}
+
+html,body{
+    height:100%;
+    width: 100%;
+}
+
+.display{
+    height: 100%;
+    width: 100%;
+    background: hsl(210, 46%, 95%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.panel{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    height: 80%;
+    width: 75%;
+}
+
+
+.left{
+    height: 100%;
+    width: 73%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    width: 100%;;
+    gap:20px;
+}
+
+.first{
+
+    height: 48%;
+    width: 68%;
+    background-color: hsl(263, 55%, 52%);
+    border-radius: 8px;
+    box-shadow: 10px 10px 10px lightgrey;
+    padding-left:25px ;
+    padding-right: 35px;
+}
+
+.head{
+    display: flex;
+    align-items: center;
+    height: 30%;
+    width: 100%;
+    color: #fff;
+    gap:20px;
+}
+img{
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+}
+
+.title{
+    font-size: 20px;
+    font-weight: 700
+}
+
+.name p{
+    font-size: 18px;
+    color: #d6d3d3;
+}
+
+.main{
+    height: 70%;
+    width: 100%;
+}
+
+.main h3{
+    font-size: 20px;
+    color: #fff;
+}
+.main p{
+    font-size: 13px;
+    margin-top: 12px;
+    color: #fff;
+}
+
+.second{
+    display: grid;
+    height: 48%;
+    width: 29.5%;
+    background-color:hsl(217, 19%, 35%);
+    border-radius: 8px;
+    box-shadow: 10px 10px 10px lightgrey;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.second .head {
+    margin-top: 20px;
+}
+
+.second .head img{
+    height: 40px;
+}
+
+.second .head .title{
+    font-size: 17px;
+}
+.second .head p{
+    font-size: 17px;
+}
+
+.second .main h3{
+    margin-top: -25px;
+    font-size: 18px;
+}
+
+.second .main p{
+    font-size: 12px;
+}
+
+.third{
+    display: grid;
+    height: 48%;
+    width: 29.5%;
+    background-color:hsl(0, 0%, 100%);
+    color: black;
+    border-radius: 8px;
+    box-shadow: 10px 10px 10px lightgrey;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.third .head {
+    color: #000;
+    margin-top: 20px;
+}
+
+.third .head img{
+    height: 40px;
+}
+
+.third .head .title{
+    font-size: 17px;
+}
+.third .head p{
+    color: #d6d3d3;
+    font-size: 17px;
+}
+
+.third .main h3{
+    color: #000;
+    margin-top: -40px;
+    font-size: 20px;
+}
+
+.third .main p{
+    margin-top: 20px;
+    color: #000;
+    font-size: 12px;
+}
+
+.fourth{
+    height: 48%;
+    width: 68%;
+    background-color: hsl(219, 29%, 14%);
+    border-radius: 8px;
+    box-shadow: 10px 10px 10px lightgrey;
+    padding-left:35px ;
+    padding-right: 35px;
+}
+
+.right{
+    height: 100%;
+    width: 25%;
+    background: #fff;
+    border-radius:8px;
+    box-shadow: 10px 10px 10px lightgrey;
+    padding-left: 35px;
+    padding-right: 35px;
+}
+
+.right .head{
+    height: 20%;
+    width: 100%;
+    color: #000;
+}
+
+.right .head img{
+    height: 50px;
+}
+
+.right .head .title{
+    font-size: 20px;
+}
+
+.right .head p{
+    color: #000;
+    font-size: 18px;
+}
+
+.right .head .main{
+    height: 80%;
+    width: 100%;
+    color: #000;
+}
+
+.right .main h3{
+    font-size: 25px;
+    color: #000;
+}
+
+.right .main p{
+    margin-top: 30px;
+    font-size: 13px;
+    color: #000;
+}
+
+
+
+
+
+
