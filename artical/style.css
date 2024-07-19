@@ -1,0 +1,163 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: manrope;
+}
+
+:root{
+    --first-color:hsl(217, 19%, 35%);
+    --second-color: hsl(214, 17%, 51%);
+    --third-color:hsl(212, 23%, 69%);
+    --fourth-color:hsl(211, 25%, 74%);
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+section{
+    height: 100%;
+    width: 100%;
+    background: var(--fourth-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    height: 50%;
+    width: 60%;
+    background: #fff;
+    display: flex;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 5px 5px 20px gray;
+}
+
+.left{
+    height: 100%;
+    width: 37%;
+    overflow: hidden;
+}
+
+.left img{
+    width: 440px;
+}
+
+.right{
+    width: 63%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.5rem;
+    padding: 40px;
+}
+
+.right h2{
+    font-size: 25px;
+    color: var(--first-color);
+}
+
+.right p{
+    font-size: 17px;
+    color: var(--second-color);
+}
+
+.person_details{
+    display: flex;
+    width: 100%;
+}
+
+ div{
+    display: flex;
+    column-gap: 1.5rem;
+    justify-content: space-between;
+}
+
+.person_details img{
+    width: 50px;
+    border-radius: 50%;
+}
+
+.person_name{
+    display: flex;
+    flex-direction: column;
+    gap: .3rem;
+}
+
+.title{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.person_name p{
+    font-size: 15px;
+}
+
+#toggle-button{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    background: var(--third-color);
+    color: var(--second-color);
+    cursor: pointer;
+    z-index: 1;
+}
+
+#close-button{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    background: var(--second-color);
+    color: var(--third-color);
+    cursor: pointer;
+    right: 347px;
+    z-index: 0;
+}
+
+/* =============== Social Link =============== */
+
+.social_link{
+    position: absolute;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 5px;
+    align-items: center;
+    opacity: 0;
+    height: 60px;
+    width: 300px;
+    background-color: var(--first-color);
+    right: 170px;
+    bottom: 260px;
+    border-radius: 15px;
+    transform: translateY(27px);
+    transition: ease .4s;
+}
+
+.show-menu{
+    opacity: 1;
+    margin-bottom: 50px;
+}
+
+.show-button{
+    opacity: 0;
+    margin-right: 50px;
+}
+
+.social_link  h3{
+    color: var(--third-color);
+}
+
+.social_link a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 25px;
+}
+
+
+/* ================================== MOBILE ================================== */
+
