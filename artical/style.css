@@ -145,7 +145,7 @@ section{
 
 .show-button{
     opacity: 0;
-    margin-right: 50px;
+    margin-bottom: 50px;
 }
 
 .social_link  h3{
@@ -161,3 +161,118 @@ section{
 
 /* ================================== MOBILE ================================== */
 
+@media screen and (max-width:340px) {
+    .hero{
+        height: 100%;
+        width: 100%;
+    }
+
+    .card{
+        height: 73%;
+        width: 95%;
+        display: grid;
+    }
+    .left{
+        height: 200px;
+        width: 100%;
+    }
+    .left img{
+        height: 230px;
+    }
+    .right{
+        display: grid;
+        gap: 10px;
+        height:px ;
+        gap:0;
+        width: 100%;
+        padding: 30px;
+
+    }
+    .right h2{
+        font-size: 16px;
+    }
+    .right p{
+        margin-top: 20px;
+        font-size: 13px;
+        
+    
+    }
+    .person_details{
+        margin-top: 30px;
+    }
+
+
+    div img{
+        height: 60px;
+        width: 60px;
+    }
+
+    .person_name {
+        margin-top: 10px;
+        height: 20px;
+        column-gap: 1px;
+    }
+    .title{
+        font-size: 14px;
+    }
+    .person_name p{
+        margin-top: 0;
+    }
+
+   
+    #close-button{
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        border: none;
+        background: var(--second-color);
+        color: var(--third-color);
+        cursor: pointer;
+        right: 15px;
+        bottom: 110px;
+        z-index: 2;
+    }
+
+    #toggle-button{
+        margin-top: 10px;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        border: none;
+        background: var(--third-color);
+        color: var(--second-color);
+        cursor: pointer;
+        z-index: 1;
+    }
+
+    .social_link{
+        position: absolute;
+        display: flex;
+        justify-content: start;
+        gap: 20px;
+        align-items: center;
+        opacity: 0;
+        height: 70px;
+        width: 320px;
+        background-color: var(--first-color);
+        right: 8px;
+        bottom: 70px;
+        border-radius: 0 0px 8px 8px;
+        transform: translateY(27px);
+        transition: ease .4s;
+    }
+
+    .social_link h3{
+        margin-left: 20px;
+    }
+    .show-menu{
+        opacity: 1;
+        margin-bottom: 50px;
+    }
+    
+    .show-button{
+        opacity: 0;
+        margin-bottom: 50px;
+    }
+}
