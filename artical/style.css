@@ -145,7 +145,7 @@ section{
 
 .show-button{
     opacity: 0;
-    margin-bottom: 50px;
+    margin-right: 50px;
 }
 
 .social_link  h3{
@@ -266,13 +266,5 @@ section{
     .social_link h3{
         margin-left: 20px;
     }
-    .show-menu{
-        opacity: 1;
-        margin-bottom: 50px;
-    }
     
-    .show-button{
-        opacity: 0;
-        margin-bottom: 50px;
-    }
 }
