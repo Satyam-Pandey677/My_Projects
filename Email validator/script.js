@@ -23,7 +23,6 @@ submit.addEventListener("click",(e)=>{
     let input = document.getElementById("email").value;
     let email_print = document.getElementById("email_print");
 
-    e.preventDefault()
 
     card1.style.display = "none"
     card2.style.display ="block"
@@ -31,8 +30,6 @@ submit.addEventListener("click",(e)=>{
 })
 
 close_Btn.addEventListener("click", (e) => {
-    e.preventDefault();
-
-    card1.style.display = "flex"
-    card2.style.display = "none"
+    card1.style.display = "flex";
+    card2.style.display = "none";
 })

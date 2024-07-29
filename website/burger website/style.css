@@ -135,6 +135,32 @@ img {
     align-items: center;
 }
 
+.nav__list{
+  text-align: center;
+  display: flex;
+}
+
+.nav_link{
+  position: relative;
+  color: var(--title-color);
+  font-family: var(--second-font);
+}
+
+.nav_link::after{
+  content: '';
+
+  height: 3px;
+  background-color: var(--first-color);
+  position: absolute;
+  left: 0;
+  bottom: -.5rem;
+  transition: width .4s;
+}
+
+.nav_link:hover::after{
+  width: 60%;
+}
+
 .nav__logo{
     display: flex;
     align-items: center;
@@ -704,100 +730,12 @@ img {
 
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
-@media screen and (max-width :370px) {
-  .conatainer{
-    margin-inline: 1rem;
-  }
 
-  .home_title{
-    font-size: 2.5rem;
-  }
-
-  .home_burger{
-    width: 210px;
-  }
-
-  .home_dish{
-    width: 250px;
-    bottom: -2rem;
-  }
-
-  .recipe_container{
-    column-gap: 5rem;
-  }
-
-  .recipe_img{
-    left: -8rem;
-  }
-
-  .popular_container{
-    grid-template-columns: 160px;
-    justify-content: center;
-    gap: 3rem;
-  }
-
-  .footer_social{
-    grid-column: 1;
-  }
-
-  .footer_contact{
-    grid-template-columns: 1fr;
-    justify-items: center;
-  }
-}
 
 /* For medium devices */
-@media screen and (min-width: 540px){
-  .home_container,
-  .delivery_container{
-    grid-template-columns: 360px;
-    justify-content: center;
-  }
 
-  .recipe_img{
-    position: initial;
-  }
 
-  .recipe_container{
-    grid-template-columns: 200px 230px;
-    justify-content: center;
-    column-gap: 3rem;
-  }
 
-  .popular_container{
-    grid-template-columns: 200px 230px;
-    justify-content: center;
-   
-  }
-
-  .contact{
-    max-width: 500px;
-    margin: 0 auto;
-  }
-}
-
-@media screen and (min-width:768px) {
-  .popular_container{
-    grid-template-columns: repeat(3,160px);
-  }
-
-  .footer_social{
-    grid-column: initial;
-  }
-
-  .footer_contact{
-    grid-template-columns: repeat(3, 1fr);
-    align-items: ce;
-  }
-
-  .footer_link:nth-child(1){
-    justify-self: start;
-  }
-  .footer_link:nth-child(2){
-    order: 2;
-    justify-self: end;
-  }
-}
 
 /* For large devices */
 @media screen and (min-width: 1150px){
@@ -829,8 +767,3 @@ img {
 
   .home_container{
   grid-template-columns: 430px ;
-  align-items: center;
-  column-gap: 4rem;
-  padding-block: 7rem 4rem;
-  }
-}
