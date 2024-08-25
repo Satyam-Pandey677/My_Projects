@@ -1,3 +1,4 @@
+
 let Daily = document.getElementById("daily");
 let Weekly = document.getElementById("weekly");
 let Monthly = document.getElementById("monthly");
