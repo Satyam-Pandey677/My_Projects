@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="form" id="form">
+        Username:
+        <input type="text" id="name" name="name">
+        <br>
+        <br>
+        Email:
+        <input type="email" id="email">
+        <br>
+        <br>
+        number:
+        <input type="number" id="number" name="number" >
+        <br>
+        <br>
+        password:
+        <input type="password" id="password">
+         <br>
+         <br>
+         <input type="submit" id="submit">
+    </div>
+
+    <script>
+        $('document').ready(function(){
+            $('#submit').click(function(){
+                event.preventDefault(); 
+
+                const formData = {
+                    name: $('#name').val(),
+                    email: $('#email').val(),
+                    number: $('#number').val(),
+                    password: $('#password').val()
+                };
+
+                $.ajax({
+                    url: 'submit.php',
+                    type: 'POST',
+                    contentType: 'application/json',
+                    data: JSON.stringify(formData),
+                    success: function(data){
+                        console.log(data);
+                    },
+                    error: function(jqXHR, textStatus, errorThrown){
+                        console.error('Error: ' + textStatus, errorThrown);
+                    }
+            })
+        })
+    })
+    </script>
+</body>
+</html>

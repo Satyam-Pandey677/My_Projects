@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.page1{
+    height: 100vh;
+    width: 100vw;
+    background: black;
+    
+}
+
+.video{
+    height: 100%;
+    width: 100%;
+    position: relative;
+
+}
+
+.video video{
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.coursor{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    z-index: 3;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.box{
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background: hsla(0, 0%, 0%, 0.719);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    transform: translate(-50%,-50%);
+}
+
+.containt{
+    height: 100%;
+    width:100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3; /* Higher z-index to place content above the video */
+    
+}
+
+.navbar{
+    height: 16vh;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 60px 0 40px;
+    align-items: center;
+    color: white;
+}
+
+.title{
+    font-size: 22px;
+    font-weight: 300;
+}
+
+.menu{
+    font-size: 22px;
+    font-weight: 300;
+}
+
+.main{
+    height: 84vh;
+    display: flex;
+    justify-content: center;
+    align-content: end;
+    flex-wrap:wrap ;
+}
+
+.site-title{
+    font-size: 18rem;
+    color: white;
+    font-weight: 800;
+}
+
+.drag-panel{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 4;
+}
